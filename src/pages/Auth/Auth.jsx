@@ -98,7 +98,7 @@ const Auth = () => {
                 },
             });
 
-            navigate(navStateData.state.redirect || "/");
+            navigate(navStateData?.state?.redirect || "/");
         } catch (error) {
             dispatch({
                 type: ACTIONS.SET_ERROR,
