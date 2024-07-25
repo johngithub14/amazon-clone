@@ -1,0 +1,70 @@
+.carouselContainer {
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    position: relative;
+}
+
+.carouselContainer::after {
+    content: "";
+    position: absolute;
+    bottom: 0px;
+    width: 100%;
+    height: 300px;
+    background-image: linear-gradient(
+        to bottom,
+        rgba(225, 225, 225, 0),
+        rgb(255, 255, 255)
+    );
+}
+
+.carousel {
+    width: 100%;
+    height: 100%;
+    position: relative;
+}
+
+.carouselItem {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.5s ease-in-out;
+}
+
+.carouselItem.active {
+    opacity: 1;
+}
+
+.carouselItem img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.carouselButton {
+    position: absolute;
+    top: 25%;
+    background-color: transparent;
+    transform: translateY(-50%);
+    color: white;
+    border: none;
+    padding: 15px;
+    cursor: pointer;
+}
+
+.prevButton {
+    left: 10px;
+}
+
+.nextButton {
+    right: 10px;
+}
+
+.prevIcon,
+.nextIcon {
+    width: 20px;
+    height: 40px;
+}

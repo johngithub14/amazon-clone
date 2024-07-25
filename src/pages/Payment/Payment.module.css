@@ -1,0 +1,167 @@
+.pyHeaderContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #ddd;
+    background-image: url(https://images-na.ssl-images-amazon.com/images/G/31/common/sprites/tspc-header-bkg.png);
+    height: 60px;
+    margin-left: 18px;
+    margin-right: 18px;
+    margin-top: 14px;
+    background-position-y: -13px;
+    position: relative;
+}
+
+.pyHeaderContainer a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pyHeaderContainer a:hover {
+    cursor: pointer;
+}
+
+.pyHeaderContainer a img {
+    position: absolute;
+    left: 0;
+    margin-left: 80px;
+}
+
+.pyHeaderContainer h1 {
+    flex-grow: 1;
+    text-align: center;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 36px;
+}
+
+.pyHeaderContainer h1 span {
+    color: #007185;
+}
+
+.pyMainContentContainer {
+    margin-top: 20px;
+    margin-left: 10vw !important;
+}
+
+.pyMainContentContainer p {
+    position: relative;
+    left: 36px;
+    top: 14px;
+    border: 1px solid #ddd;
+    padding: 10px;
+    width: 60%;
+    border-radius: 8px;
+}
+
+.firstHr {
+    margin-top: 30px;
+    margin-bottom: 10px;
+    width: 63%;
+}
+
+.pyMainContentContainer p span {
+    font-weight: 600;
+}
+
+.pyMainContentContainer h3 {
+    color: #c45500;
+    font-size: 18px;
+    line-height: 24px;
+}
+
+.pyMainContentContainer h3 span {
+    margin-left: 10px;
+}
+
+.pyProducts {
+    position: relative;
+    left: 36px;
+    top: 14px;
+    border: 1px solid #ddd;
+    padding: 10px;
+    width: 60%;
+    border-radius: 8px;
+    padding-bottom: 5vh;
+}
+
+.pyProducts img {
+    height: 130px !important;
+}
+
+.pyProducts .productFlexed {
+    height: 30vh;
+}
+
+.productFlexed p {
+    border: none !important;
+}
+
+.productFlexed h3 {
+    color: black !important;
+}
+
+.pyMethods {
+    position: relative;
+    left: 36px;
+    top: 14px;
+    border: 1px solid #ddd;
+    padding: 10px;
+    width: 60%;
+    border-radius: 8px;
+    padding-bottom: 5vh;
+    margin-bottom: 20vh;
+    height: 19vh;
+}
+
+.pyError {
+    background-color: rgb(255, 122, 122);
+    border: 1px solid red;
+    color: white;
+    padding: 10px;
+    margin-top: 20px;
+    border-radius: 8px;
+    position: relative;
+    left: 36px;
+    top: 14px;
+    border: 1px solid #ddd;
+    padding: 10px;
+    width: 60%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.orderTotal p {
+    border: none;
+    display: flex;
+
+    position: absolute;
+    left: 0px;
+    top: 28px;
+}
+
+.orderTotal p span {
+    margin-left: 10px;
+}
+
+.pyMethods button {
+    margin-top: 45px;
+    width: 100%;
+    padding: 7px;
+    font-size: 15px;
+    border-radius: 8px;
+    background-color: #ffe359;
+    border: none;
+}
+
+.pyMethods button:hover {
+    cursor: pointer;
+    background-color: #ffd814;
+}
+
+.loaderIcon {
+    display: flex !important;
+    align-items: center !important;
+    justify-content: center !important;
+}

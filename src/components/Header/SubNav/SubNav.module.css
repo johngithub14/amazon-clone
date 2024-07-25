@@ -1,0 +1,48 @@
+.subHeader {
+    background-color: #232f3e;
+    color: white;
+    font-size: 14px;
+    width: 100%;
+    padding-left: 11px;
+    display: flex;
+    align-items: stretch;
+}
+
+.navList {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.navItem {
+    padding: 8px 9px;
+    border: 1px solid transparent;
+    border-radius: 2px;
+    transition: border-color 0.2s ease;
+}
+
+.navItem:hover {
+    border-color: #ffffff;
+}
+
+.navLink {
+    color: white;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.iconWrapper {
+    padding-top: 4px;
+}
+
+.icon {
+    width: 16px; 
+    height: auto;
+}
+
+.navText {
+    margin: 0;
+}

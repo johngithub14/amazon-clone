@@ -1,0 +1,22 @@
+.productsContainer {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    max-width: 1300px;
+    margin: 30px 50px 100px 50px;
+    gap: 50px;
+    justify-items: center;
+}
+
+.productsContainer section {
+    margin: 0 auto;
+}
+
+.resultsSection h1,
+.resultsSection p {
+    margin-top: 20px;
+    margin-left: 30px;
+}
+
+.resultsSection p span{
+    font-weight: 600;
+}

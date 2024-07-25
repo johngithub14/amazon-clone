@@ -1,0 +1,8 @@
+@font-face {
+    font-family: "AmazonEmber";
+    src: url("./Fonts/AmazonEmber_W_Rg.woff2") format("woff2");
+}
+
+* {
+    font-family: "AmazonEmber";
+}

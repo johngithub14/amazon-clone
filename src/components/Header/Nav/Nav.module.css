@@ -1,0 +1,374 @@
+/* Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Navbar */
+.navbar {
+    width: 100%;
+    height: 60px;
+    padding: 5px 10px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #131921;
+    color: white;
+}
+
+/* First Section */
+.navSection:nth-child(1) {
+    display: flex;
+    align-items: stretch;
+}
+
+/* Logo */
+.logoContainer {
+    display: flex;
+    align-items: center;
+    padding: 0 7.5px;
+    border: 1px solid transparent;
+    transition: border-color 0.2s ease;
+    cursor: pointer;
+}
+
+.logoContainer:hover {
+    border-color: #ffffff;
+    border-radius: 2px;
+}
+
+.logoLink {
+    display: flex;
+    align-items: center;
+}
+
+.logo {
+    max-height: 32px;
+    padding-top: 3px;
+}
+
+/* Delivery */
+.deliveryContainer {
+    display: flex;
+    align-items: center;
+    padding: 0 7px;
+    border: 1px solid transparent;
+    transition: border-color 0.2s ease;
+}
+
+.deliveryContainer:hover {
+    border-color: #ffffff;
+    border-radius: 2px;
+}
+
+.deliveryLink {
+    display: flex;
+    align-items: center;
+    color: white;
+    text-decoration: none;
+}
+
+.iconWrapper {
+    display: flex;
+    align-items: center;
+    padding-top: 12px;
+    margin-right: 5px;
+}
+
+.navText {
+    display: flex;
+    flex-direction: column;
+}
+
+.smallText {
+    font-size: 13px;
+    color: #cccccc;
+}
+
+.largeText {
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.navSection:nth-child(2) {
+    padding-top: 2px;
+}
+
+/* Search Section */
+.searchSection {
+    flex-grow: 1;
+    justify-content: center;
+}
+
+.searchContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 10px;
+}
+
+.search {
+    display: flex;
+    max-width: 1000px;
+    width: 100%;
+    height: 45px;
+    border: 2px solid transparent;
+}
+
+.search:focus-within {
+    border: 2.5px solid #ff9900;
+    border-radius: 7px;
+}
+
+.searchDropdown,
+.searchInput,
+.searchButton {
+    padding: 10px;
+}
+
+.searchDropdown {
+    font-size: 14px;
+    border: 1px solid #cdcdcd;
+    border-right: none;
+    background-color: #f3f3f3;
+    color: #555;
+    border-radius: 4px 0 0 4px;
+}
+
+.searchInput {
+    flex-grow: 1;
+    font-size: 16px;
+    border: 1px solid #cdcdcd;
+    border-left: none;
+    border-right: none;
+}
+
+.searchInput:focus {
+    outline: none;
+}
+
+.searchButton {
+    background-color: #febd69;
+    border: none;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+}
+
+.searchButton:hover {
+    background-color: #f3a847;
+}
+
+.searchIcon {
+    width: 22px;
+    height: 22px;
+}
+
+/* Right Section */
+.rightSection {
+    display: flex;
+    align-items: stretch;
+}
+
+.languageContainer,
+.accountsWrapper,
+.ordersWrapper,
+.cartContainer {
+    display: flex;
+    align-items: center;
+    padding: 0 7px;
+    border: 1px solid transparent;
+    transition: border-color 0.2s ease;
+}
+
+.languageContainer:hover,
+.accountsWrapper:hover,
+.ordersWrapper:hover,
+.cartContainer:hover {
+    border-color: #ffffff;
+    border-radius: 2px;
+}
+
+.flagIcon {
+    width: 24px;
+    height: 16px;
+}
+
+.languageContainer {
+    padding-top: 14px;
+    gap: 5px;
+}
+
+.languageSelect {
+    border: none;
+    background: none;
+    color: white;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.accountLink,
+.ordersLink {
+    text-decoration: none;
+    color: white;
+    margin-right: 10px;
+}
+
+.cartContainer a {
+    color: white;
+    text-decoration: none;
+}
+
+.cartIcon {
+    padding-top: 2px;
+}
+
+.cartCount {
+    position: absolute;
+    right: 58px;
+    top: 10px;
+    color: #f08804;
+    font-weight: bold;
+}
+
+.cartContainer .largeText {
+    padding-top: 13px;
+}
+
+@media screen and (max-width: 970px) {
+    .deliveryContainer,
+    .accountsWrapper,
+    .languageContainer,
+    .ordersWrapper {
+        display: none;
+    }
+
+    .navbar {
+        width: 100%;
+        height: auto;
+        display: flex;
+        margin: 0px !important;
+        padding: 0px !important;
+        flex-direction: column !important;
+    }
+
+    .searchSection {
+        margin-bottom: 20px;
+    }
+
+    .search {
+        margin: 0px 10px;
+    }
+
+    .searchInput {
+        border-top-left-radius: 4px;
+        border-bottom-left-radius: 4px;
+    }
+
+    
+    .searchContainer {
+        display: flex;
+        align-items: center;
+        margin: 0px !important;
+        padding: 0px !important;
+        width: 100% !important;
+    }
+
+    .searchDropdown {
+        display: none;
+    }
+
+    .searchIcon {
+        display: none;
+    }
+
+    .searchIconSM {
+        display: block;
+        width: 25px;
+        height: 25px;
+        color: black !important;
+    }
+
+    .searchButton {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: #febd69;
+    }
+    .logoContainer {
+        border: none;
+    }
+    .logoContainer:hover {
+        border: none;
+    }
+
+    .searchIconSM {
+        filter: grayscale(100%) brightness(0%);
+    }
+
+    .mobileAccount {
+        position: fixed;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end !important;
+        gap: 5px;
+        margin-left: 200px;
+    }
+
+   
+
+    .mobileAccount p {
+        font-size: 14px;
+    }
+
+    .accountIcon {
+        width: 22px;
+        height: 23px;
+    }
+
+    .signInLink {
+        color: white;
+        text-decoration: none;
+    }
+
+    .navSection:nth-child(1) {
+        display: flex;
+        align-items: center;
+        padding: 10px 10px;
+        width: 100%;
+    }
+
+    .cartContainer {
+        position: absolute;
+        top: 11px;
+        right: 11px;
+        margin: 0px;
+        padding: 0px;
+        border: none;
+    }
+
+    .cartContainer .largeText {
+        display: none;
+    }
+
+    .cartContainer:hover {
+        border: none;
+    }
+
+    .cartCount {
+        top: -5px;
+        right: 11px;
+    }
+
+    .search:focus-within {
+        border: none;
+    }
+}
+
+@media (min-width: 970px) {
+    .searchIconSM {
+        display: none;
+    }
+    .mobileAccount {
+        display: none;
+    }
+}
